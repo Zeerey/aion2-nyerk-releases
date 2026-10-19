@@ -34,7 +34,7 @@ A useful comparison uses the **same completed encounter**, the **same target sco
 
 ## A boss timer is wrong or missing
 
-Check the selected character/server, map, channel and the timer's source/status. A scheduled estimate can drift when respawn depends on a kill. Fresh all-map coverage is not available in the public build; later game-observation work is still being validated.
+Check the selected character/server, map, channel and the timer's source/status. A scheduled estimate can drift when respawn depends on a kill. RC31 reads supported map lists and restores saved deadlines. Keep tracking enabled, identify your active character/server, then open Map → Exploration → Field monsters on the relevant map. Restored observations are not fresh checks. Abyss and other additional maps still need live acceptance, and channels are not decoded.
 
 Report the game's countdown, Nyerk's countdown and the exact observation time with timezone. [Timer guide](TIMERS.md)
 

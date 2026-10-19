@@ -15,8 +15,8 @@ macOS and Linux builds are not currently available.
 
 ## First launch
 
-1. Open the [recommended public release](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.28).
-2. Under **Assets**, download **Aion2Nyerk-1.0.0-rc.28-Portable.zip**.
+1. Open the [recommended public release](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.31).
+2. Under **Assets**, download **Aion2Nyerk-1.0.0-rc.31-Portable.zip**.
 3. Extract the whole ZIP into a folder you can write to. Do not run it from inside the archive.
 4. Install Npcap from its official website if needed, then run **Launch Nyerk.cmd** or **Aion2Nyerk.exe**.
 5. Start tracking if it is stopped, then log into AION 2. Starting Nyerk before login gives it the best opportunity to observe your character identity.

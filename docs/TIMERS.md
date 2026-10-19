@@ -15,15 +15,15 @@ A timer is only as reliable as the information behind it. Nyerk distinguishes sc
 | Unknown / awaiting observation | Nyerk does not have enough evidence for a deadline. |
 | Time elapsed / check map | The known deadline has passed. It does not confirm the boss is alive. |
 
-## Public RC28
+## Scheduled activities in RC31
 
 The public build includes scheduled events, server/faction context, boss pinning, manual boss observations and configurable popout reminders. Shugo and Dimensional Invasion were checked against the developer's game; Spacetime Rift was also reported as matching. Those checks are not verification of every server or future schedule.
 
-Field bosses start their respawn timers after a kill. A fixed repeating timetable can drift and should not be treated as a live boss service. The older fixed Kaira, Nahma and Executor schedules are known to disagree with observed Abyss countdowns.
+Field bosses start their respawn timers after a kill. A fixed repeating timetable can drift and should not be treated as a live boss service. RC31 removes the conflicting fixed Kaira, Nahma and Executor schedules. Those entries await game observations or manual map countdowns.
 
-## Boss observations in the next builds
+## Game-observed boss deadlines in RC31
 
-RC30–RC31 work is implemented locally and has not been included in the public RC28 download:
+The public RC31 download includes these features:
 
 - Read supported boss lists and preserve the game's reported deadlines.
 - Save observations locally so they return at startup.
@@ -33,6 +33,15 @@ RC30–RC31 work is implemented locally and has not been included in the public 
 - Preserve multi-day deadlines and show expired times without inventing a new spawn.
 
 The existing recordings verify Verteron's feed. Altgard and additional maps, including Abyss areas, still need live acceptance. Channels are not decoded.
+
+### Getting observations
+
+1. Start Nyerk and leave tracking enabled before logging into AION 2.
+2. Let Nyerk identify your active character and server.
+3. Visit the relevant map and open **Map → Exploration → Field monsters** if needed.
+4. Reopen the list to receive refreshed observations, and check the source/status labels in Nyerk.
+
+Lower Reshanta entries are available for both factions, with separate Nahma locations. Eltnen, Morheim and Middle Reshanta entries appear after the map is identified for that server. A newer manual countdown can take precedence over an older captured value.
 
 **Launching Nyerk cannot obtain fresh timers for every unseen map.** Saved observations can load immediately; fresh observations depend on what the game sends. A new map may require a living-boss position before its list can be identified. These limits are why the work is still being validated.
 

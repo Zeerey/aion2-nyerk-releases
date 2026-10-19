@@ -2,7 +2,20 @@
 
 [← Back to Nyerk](README.md)
 
-This page highlights public milestones. The linked release pages contain the complete notes and downloads. Local RC29–RC31 work is tracked in the [roadmap](ROADMAP.md).
+This page highlights public milestones. The linked release pages contain the complete notes and downloads. Remaining validation and next priorities are tracked in the [roadmap](ROADMAP.md).
+
+## RC31 — Saved encounters, combat improvements and observed boss timers
+
+[Release notes and download](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.31)
+
+This public update combines RC29–RC31:
+
+- Broader skill coverage and confirmed-kill encounter endings, with a target-specific review clock.
+- Automatic history of the latest ten unstarred fights, protected starred encounters and per-player skill/effect timelines.
+- Game-reported boss deadlines, persistent map observations, separate Nahma locations and map filtering.
+- Removal of conflicting fixed Abyss boss schedules; unknown and expired values remain clearly labelled.
+
+Verteron's feed is verified against recorded game traffic. Altgard and additional maps, including Abyss, still need live acceptance. Fresh observations depend on the game sending the relevant map list. Combat remains experimental and this build is unsigned.
 
 ## RC28 — Combat accuracy and summon attribution
 

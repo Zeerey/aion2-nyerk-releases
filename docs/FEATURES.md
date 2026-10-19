@@ -2,7 +2,7 @@
 
 [← Back to Nyerk](../README.md)
 
-This guide describes the public RC28 feature set. Later changes under local validation are listed separately in the [roadmap](../ROADMAP.md).
+This guide describes the public RC31 feature set. Validation limits and next priorities are listed in the [roadmap](../ROADMAP.md).
 
 ## Account overview and characters
 
@@ -20,17 +20,21 @@ The small pet strip follows the most recently acquired pet and shows its name an
 
 The Combat page shows counted damage, encounter-average DPS, contributors, targets and skill details. The popout ranks identified contributors by DPS, with damage bars, totals and shares. Supported summons are attributed to verified owners; unresolved sources remain visible without being mislabeled as extra party members.
 
-Completed encounter DPS uses the first-to-last counted outgoing-hit window, including the time between attacks. All contributors use the same encounter duration. It is not buff-adjusted rDPS, peak DPS, or a sum of per-skill active times.
+Completed encounter DPS uses the first-to-last counted outgoing-hit window, including the time between attacks. All contributors use the same encounter duration. A selected target uses its own shared first-to-last hit window, while the popout continues showing the full encounter. Confirmed kills finish a fight once all engaged opponents are defeated; otherwise an inactivity fallback applies. It is not buff-adjusted rDPS, peak DPS, or a sum of per-skill active times.
 
 Nyerk does not yet decode every effect, identity or party relationship. A ranking of identified attackers is not an authoritative party roster. Missing packets, late startup, unsupported effects or a partial encounter can produce disagreement with another meter.
 
-**Automatic ten-fight history, starring and time-range buff analysis are later-build work, not RC28 features.**
+### Saved encounters and fight review
+
+Combat keeps the latest **ten unstarred encounters** automatically, deleting the oldest unstarred fight as room is needed. **Star an encounter** to protect it from rotation. Saved fights survive restarts; interrupted fights can recover from periodic checkpoints with a partial-data label.
+
+Open a saved fight and select a contributor to inspect skills and observed buff, debuff and renewal intervals for the full encounter or a selected time range. Missing effect observations remain unknown; these timelines do not calculate buff-adjusted rDPS. Detailed hit and effect timelines have safety limits, with aggregate damage retained if a timeline is capped. Diagnostic packet recording remains under Network.
 
 ## Events, bosses and reminders
 
 View relevant activities using character/server context or a manual selection. Event icons distinguish activity types, countdowns help prioritize upcoming events, and bosses can be pinned. Select which reminders appear in the companion popout.
 
-Shugo, Dimensional Invasion, Spacetime Rift, Abyss activities and reset information have different evidence and timing rules. A schedule or manual estimate is not a live server observation. [Read the timer guide](TIMERS.md) before relying on a boss countdown.
+Shugo, Dimensional Invasion, Spacetime Rift, Abyss activities and reset information have different evidence and timing rules. Supported boss lists supply game-reported deadlines, which are saved locally and restored as last-observed information. Separate Nahma sites and a map filter help distinguish locations. Conflicting fixed Kaira, Nahma and Executor schedules have been removed; those bosses await observations or manual countdowns. A schedule, saved observation or manual estimate is not a continuously refreshed live server feed. [Read the timer guide](TIMERS.md) before relying on a boss countdown.
 
 ## A configurable companion popout
 

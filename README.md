@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.28"><strong>Download for Windows</strong></a>
+  <a href="https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.31"><strong>Download for Windows</strong></a>
   &nbsp; · &nbsp;
   <a href="docs/GETTING_STARTED.md">Getting started</a>
   &nbsp; · &nbsp;
@@ -31,8 +31,8 @@ Start Nyerk before logging into AION 2 and let supported game observations fill 
 | --- | --- |
 | **Your characters** | Saved characters, levels, item level, combat power, Odyle Energy and tracked activities. Choose a compact roster, cards or a four-card carousel. |
 | **Your pets** | Account-wide collection progress, searchable pets and a small popout showing the latest acquired pet's progress. |
-| **Your combat** | Experimental damage totals, encounter-average DPS, contributor rankings and skill details. Supported summon damage follows its verified owner. |
-| **Your next activity** | Event countdowns, boss tracking tools, favorites and configurable reminders. Server and faction context helps show relevant entries. |
+| **Your combat** | Experimental damage totals, encounter-average DPS, contributor rankings, saved fights and skill/effect timelines. Supported summon damage follows its verified owner. |
+| **Your next activity** | Event countdowns, game-observed boss deadlines, favorites and configurable reminders. Saved map observations return at startup; server and faction context helps show relevant entries. |
 | **Your companion bar** | Choose Pets, Combat and Timers in a movable popout. DPS rows expand as needed, with compact event alerts and quick hover details. |
 | **Your feedback** | An in-app bug-report shortcut, diagnostic recording tools and frequent development updates. |
 
@@ -40,9 +40,9 @@ Nyerk fills supported information automatically when it is observed. Values can 
 
 ## Download
 
-**Recommended public build: [1.0.0-rc.28](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.28).** Nyerk is a release candidate in active development, not a final 1.0 release.
+**Recommended public build: [1.0.0-rc.31](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.31).** Nyerk is a release candidate in active development, not a final 1.0 release.
 
-**[Download the Windows portable ZIP](https://github.com/Zeerey/aion2-nyerk-releases/releases/download/v1.0.0-rc.28/Aion2Nyerk-1.0.0-rc.28-Portable.zip)** · [Release notes](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.28) · [All releases](https://github.com/Zeerey/aion2-nyerk-releases/releases)
+**[Download the Windows portable ZIP](https://github.com/Zeerey/aion2-nyerk-releases/releases/download/v1.0.0-rc.31/Aion2Nyerk-1.0.0-rc.31-Portable.zip)** · [Release notes](https://github.com/Zeerey/aion2-nyerk-releases/releases/tag/v1.0.0-rc.31) · [All releases](https://github.com/Zeerey/aion2-nyerk-releases/releases)
 
 1. Install [Npcap](https://npcap.com/#download) for live game tracking. Windows 10/11 x64 and [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2) are required.
 2. Extract the entire portable ZIP into a folder you can write to.
@@ -50,7 +50,7 @@ Nyerk fills supported information automatically when it is observed. Values can 
 
 Choose the **Portable ZIP** under release assets. GitHub's automatic **Source code** archives contain this downloads repository, not a runnable Nyerk application.
 
-> GitHub's “Latest” badge can point to an older release because newer builds are marked as prereleases. Use the recommended build linked above. RC29–RC31 work is still local and is described separately in the [roadmap](ROADMAP.md).
+> GitHub's “Latest” badge can point to an older release because newer builds are marked as prereleases. Use the recommended build linked above. RC31 includes the RC29 combat improvements and RC30 saved-encounter features. See the [release highlights](CHANGELOG.md).
 
 ### Already using Nyerk?
 
@@ -62,7 +62,7 @@ Your characters, settings and recordings stay in `%APPDATA%\Aion2Nyerk`. Updates
 
 - **Keep the game in view.** Use the popout for pet progress, encounter DPS and upcoming-event alerts.
 - **Find what matters.** Switch overview layouts, search the pet collection and pin bosses you care about.
-- **Keep track between sessions.** Saved profiles and collection data remain available after restarting.
+- **Keep track between sessions.** Saved profiles, collection data and observed boss deadlines return at startup. Combat retains the latest ten unstarred encounters; star a fight to keep it.
 - **Help shape the next build.** Practical feedback, bug reports and feature requests directly inform ongoing development.
 
 **Useful shortcuts:** `Ctrl + Alt + P` shows or hides the popout. `Ctrl + Alt + L` locks or unlocks it.
@@ -71,7 +71,7 @@ Your characters, settings and recordings stay in `%APPDATA%\Aion2Nyerk`. Updates
 
 Combat decoding is experimental. Missing skill, identity or summon-owner observations can affect totals and names; Nyerk does not claim perfect agreement with other meters. Timers distinguish schedules, estimates and observations. Field-boss respawns depend on kills, so a repeating schedule is not a reliable live boss feed.
 
-The next builds focus on broader combat coverage, saved encounter analysis and game-observed boss deadlines across more maps. [See current limits and the roadmap →](ROADMAP.md)
+RC31 adds automatic encounter history, starred fights, skill/effect timelines and persistent game-observed boss deadlines. Verteron's timer feed is recording-verified; live acceptance for other maps, including Abyss, is still pending. [See current limits and the roadmap →](ROADMAP.md)
 
 ## Privacy and Windows security
 
