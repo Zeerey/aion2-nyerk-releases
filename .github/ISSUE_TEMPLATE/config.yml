@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation and troubleshooting
+    url: https://github.com/Zeerey/aion2-nyerk-releases/blob/main/docs/TROUBLESHOOTING.md
+    about: Find setup help, update guidance and answers to common problems.
+  - name: Timer guide and current coverage
+    url: https://github.com/Zeerey/aion2-nyerk-releases/blob/main/docs/TIMERS.md
+    about: Understand observed times, estimates and maps still being verified.

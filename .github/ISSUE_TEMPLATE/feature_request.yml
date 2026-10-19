@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest something that would make Nyerk more useful.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas and feedback help shape Nyerk. Check the roadmap and existing issues first.
+        Requests are considered alongside reliability and testing needs; inclusion and timing are not guaranteed.
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Describe the problem or situation this would improve.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Nyerk help?
+      description: Describe your preferred behavior. An example is welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Alternatives or examples
+      description: Optional. Include relevant links or screenshots with private information removed.

@@ -1,0 +1,58 @@
+name: Timer mismatch
+description: Compare a boss or event timer with the game.
+title: "[Timer] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A countdown needs its observation time to be useful. Please include the date, time and timezone.
+        Fixed schedules, manual estimates and game observations are different. See the timer guide for current coverage.
+        Reports are public: do not attach raw packet recordings.
+  - type: input
+    id: version
+    attributes:
+      label: Nyerk version
+      placeholder: "For example: 1.0.0-rc.28"
+    validations:
+      required: true
+  - type: input
+    id: activity
+    attributes:
+      label: Boss or activity and map
+      placeholder: "For example: Watcher Kaira, Chaotic Lower Reshanta"
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Region, server, faction and channel
+      description: Write unknown for any part you do not know. No character name is needed.
+    validations:
+      required: true
+  - type: input
+    id: observed
+    attributes:
+      label: When did you compare the timers?
+      placeholder: "October 19, 2026 at 8:15 PM EDT"
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Countdown shown in the game
+      placeholder: "1h 49m"
+    validations:
+      required: true
+  - type: input
+    id: nyerk
+    attributes:
+      label: Countdown and status shown in Nyerk
+      placeholder: "49m — Community estimate"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Recent changes or screenshots
+      description: Did the boss just die, did you change channel, or did Nyerk start recently? Attach only screenshots you have reviewed for private information.
